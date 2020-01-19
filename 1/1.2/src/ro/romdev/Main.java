@@ -5,6 +5,13 @@ public class Main {
     }
 
     public static float netPayment(int horulyRate, int numberOfHours) {
-        return  0f;
+
+        int gross = numberOfHours * horulyRate;
+
+        float net = (float)85/100 * gross;
+
+        return  net;
+
     }
+
 }
